@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MiPerfil"></activity>
+        <activity android:name=".MiEncuesta"></activity>
+        <activity android:name=".MiPerfil" />
         <activity android:name=".PrincipalActivity" />
         <activity
             android:name=".MainActivity"
@@ -20,6 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Imagen Cropper Activity-->
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+
     </application>
 
 </manifest>

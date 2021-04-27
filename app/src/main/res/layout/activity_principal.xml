@@ -34,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center"
+            android:background="#41C0FA"
             android:orientation="vertical">
 
             <ImageView
@@ -41,18 +42,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/perfil"/>
+                android:src="@drawable/perfil" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:text="Mi Perfil"
                 android:layout_marginBottom="10dp"
+                android:text="Mi Perfil"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="19sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -77,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center"
+            android:background="#41C0FA"
             android:orientation="vertical">
 
             <ImageView
@@ -84,18 +86,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/encuestar"/>
+                android:src="@drawable/encuestar" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:text="Encuestar"
                 android:layout_marginBottom="10dp"
+                android:text="Encuestar"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="19sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -120,6 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center"
+            android:background="#41C0FA"
             android:orientation="vertical">
 
             <ImageView
@@ -127,18 +130,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/registros"/>
+                android:src="@drawable/registros" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:text="Registros"
                 android:layout_marginBottom="10dp"
+                android:text="Registros"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="19sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -157,30 +160,31 @@
         app:layout_rowWeight="1"
         android:foreground="?selectableItemBackground">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/info"/>
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:text="Acerca de"
-                android:layout_marginBottom="10dp"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="19sp"
-                android:textStyle="bold"
-                />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:background="#41C0FA"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:text="Acerca de"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -199,30 +203,31 @@
         app:layout_rowWeight="1"
         android:foreground="?selectableItemBackground">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/credito"/>
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:text="Crédito"
-                android:layout_marginBottom="10dp"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="19sp"
-                android:textStyle="bold"
-                />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:background="#41C0FA"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/credito" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:text="Crédito"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.gridlayout.widget.GridLayout>
