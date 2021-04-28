@@ -5,40 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-
     tools:context=".MiEncuesta">
-
-
-    <TextView
-        android:id="@+id/textTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:gravity="center_horizontal"
-        android:padding="20dp"
-        android:text="ENCUESTA AL HABITANTE"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp"
-        android:textStyle="bold"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textTitulo">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="ENCUESTA AL HABITANTE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="15dp"
+                android:textStyle="bold"/>
+
+
 
             <com.blogspot.atifsoftwares.circularimageview.CircularImageView
                 android:id="@+id/profileIv"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:src="@drawable/ic_camara"
                 app:c_border="true"
@@ -46,256 +46,550 @@
                 app:c_border_width="1dp" />
 
             <TextView
-        android:id="@+id/textTitulo1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CARACTERÍSTICAS DE LA VIVIENDA:"
-        android:layout_below="@+id/profileIv"
-        android:textSize="15dp"
-        android:padding="10dp"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="15dp"
-        tools:ignore="MissingConstraints"
-        android:gravity="center_horizontal"
-        android:textStyle="bold"/>
+                android:id="@+id/textTitulo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARACTERÍSTICAS DE LA VIVIENDA:"
+                android:layout_below="@+id/profileIv"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="15dp"
+                tools:ignore="MissingConstraints"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
 
 
 
-    <LinearLayout
-        android:id="@+id/textPregunta1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textTitulo1"
-        android:orientation="vertical"
-        android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/textPregunta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitulo1"
+                android:orientation="vertical"
+                android:padding="25dp">
 
-        <TextView
-            android:id="@+id/texto_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="ELIJA UNA OPCION"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/texto_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="ELIJA UNA OPCION"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
 
-        <CheckBox
-            android:id="@+id/check_casa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Casa"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_casa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Casa"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:id="@+id/check_departamento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Departamento"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_departamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Departamento"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:id="@+id/check_cuarto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Cuarto"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
-        <CheckBox
-            android:id="@+id/check_otros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Otros"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_cuarto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Cuarto"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_otros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Otros"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
 
-        <EditText
-            android:id="@+id/campo_otros"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:layout_marginTop="16dp"
-            android:hint="¿Cuáles otros?"
-            android:textColorHint="@color/gris"
-            android:textColor="@color/black"
-            android:inputType="textMultiLine"
-            android:lines="3"
-            android:maxLines="3"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <EditText
+                    android:id="@+id/campo_otros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="16dp"
+                    android:hint="¿Cuáles otros?"
+                    android:textColorHint="@color/gris"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/textPregunta2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textPregunta1"
-        android:orientation="vertical"
-        android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/textPregunta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPregunta1"
+                android:orientation="vertical"
+                android:padding="25dp">
 
-        <TextView
-            android:id="@+id/texto_info1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="NÚMERO DE PISOS"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/texto_info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="NÚMERO DE PISOS"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
 
-        <CheckBox
-            android:id="@+id/check_uno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="1"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_uno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-        <CheckBox
-            android:id="@+id/check_dos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="2"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_dos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-        <CheckBox
-            android:id="@+id/check_tres"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="3"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_tres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-        <CheckBox
-            android:id="@+id/check_cuatro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="4"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_cuatro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/textPregunta3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textPregunta2"
-        android:orientation="vertical"
-        android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/textPregunta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPregunta2"
+                android:orientation="vertical"
+                android:padding="25dp">
 
-        <TextView
-            android:id="@+id/texto_info2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="TIPO DE TECHO"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/texto_info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="TIPO DE TECHO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
 
-        <CheckBox
-            android:id="@+id/check_cinc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Cinc"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_cinc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Cinc"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-        <CheckBox
-            android:id="@+id/check_teja"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Teja"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_teja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Teja"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-        <CheckBox
-            android:id="@+id/check_loseta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Loseta"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_loseta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Loseta"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-        <CheckBox
-            android:id="@+id/check_loza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Loza"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox" />
+                <CheckBox
+                    android:id="@+id/check_loza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Loza"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/textPregunta4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textPregunta3"
-        android:orientation="vertical"
-        android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/textPregunta4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPregunta3"
+                android:orientation="vertical"
+                android:padding="25dp">
 
-        <TextView
-            android:id="@+id/texto_info3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="TIPO DE TECHO"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/texto_info3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="TIPO DE PAREDES"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
 
-        <CheckBox
-            android:id="@+id/check_madera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Madera"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_madera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Madera"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:id="@+id/check_bloque"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Bloque"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_bloque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Bloque"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:id="@+id/check_hormigon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Hormigón"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox"/>
+                <CheckBox
+                    android:id="@+id/check_hormigon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Hormigón"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:id="@+id/check_loza1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Loza"
-            android:textColor="@color/black"
-            android:theme="@style/MyCheckBox" />
+                <CheckBox
+                    android:id="@+id/check_loza1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Loza"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/textPregunta5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPregunta4"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/texto_info4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="TIPO DE PISO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/check_madera1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Madera"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
+
+                <CheckBox
+                    android:id="@+id/check_hormigon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Bloque"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
+
+                <CheckBox
+                    android:id="@+id/check_porcelanato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Hormigón"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox"/>
+
+                <CheckBox
+                    android:id="@+id/check_tierra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Loza"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textTitulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATOS DEL ENCUESTADO"
+                android:layout_below="@+id/textPregunta5"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="15dp"
+                tools:ignore="MissingConstraints"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/textPregunta6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPregunta1"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <EditText
+                    android:id="@+id/encuestado_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Nombres"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gris"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/encuestado_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/encuestado_nombre"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Dirección"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gris"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/encuestado_edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/encuestado_direccion"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Edad"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gris"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/texto_info5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingTop="10dp"
+                    android:text="SEXO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/textPregunta7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texto_info5">
+
+
+                    <CheckBox
+                        android:id="@+id/check_hombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Hombre"
+                        android:layout_marginRight="40dp"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/check_mujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Mujer"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyCheckBox" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textTitulo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERFIL"
+                android:layout_below="@+id/textPregunta6"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="15dp"
+                tools:ignore="MissingConstraints"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/textPregunta8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitulo3"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/texto_info6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="LA VIVIENDA QUE HABITA ES:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/check_propia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Propia"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/check_rentada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Rentada"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/check_prestada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Prestada"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/check_otros1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Otro"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyCheckBox" />
+
+                <EditText
+                    android:id="@+id/campo_otros1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Detallar"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gris"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/textPregunta9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPregunta4"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/texto_info7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="¿CUANTAS PERSONAS HABITAN LA VIVIENDA?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/encuestado_vivienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/encuestado_nombre"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Número"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gris"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
     </ScrollView>
 
 </RelativeLayout>

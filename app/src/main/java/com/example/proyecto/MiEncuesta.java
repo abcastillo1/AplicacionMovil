@@ -9,8 +9,8 @@ import android.widget.CompoundButton;
 
 public class MiEncuesta extends AppCompatActivity {
 
-    private CheckBox check_otros;
-    private View campo_otros;
+    private CheckBox check_otros,check_otros1;
+    private View campo_otros,campo_otros1;
 
 
     @Override
@@ -21,10 +21,20 @@ public class MiEncuesta extends AppCompatActivity {
         check_otros = (CheckBox) findViewById(R.id.check_otros);
         campo_otros = findViewById(R.id.campo_otros);
 
+        check_otros1 = (CheckBox) findViewById(R.id.check_otros1);
+        campo_otros1 = findViewById(R.id.campo_otros1);
+
         check_otros.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 campo_otros.setVisibility(isChecked ? View.VISIBLE : View.GONE);
+            }
+        });
+
+        check_otros1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                campo_otros1.setVisibility(isChecked ? View.VISIBLE : View.GONE);
             }
         });
 
