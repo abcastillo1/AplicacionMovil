@@ -48,12 +48,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profileIv"
+                android:background="#FFFFFF"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
-                android:text="CARACTERÍSTICAS DE LA VIVIENDA:"
+                android:text="CARACTERÍSTICAS DE LA VIVIENDA"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textColor="@color/nos"
+                android:textSize="18dp"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="15dp" />
@@ -72,6 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
+                    android:textSize="18dp"
                     android:text="ELIJA UNA OPCION"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
@@ -82,6 +84,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Casa"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -91,6 +94,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Departamento"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -100,6 +104,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Cuarto"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -109,6 +114,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Otros"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -121,6 +127,7 @@
                     android:inputType="textMultiLine"
                     android:lines="3"
                     android:maxLines="3"
+                    android:textSize="17dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
@@ -142,6 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="NÚMERO DE PISOS"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -149,10 +157,9 @@
                     android:id="@+id/check_uno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
                     android:checked="false"
                     android:text="1"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -160,10 +167,9 @@
                     android:id="@+id/check_dos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="1"
-                    android:layout_column="0"
                     android:checked="false"
                     android:text="2"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -171,10 +177,9 @@
                     android:id="@+id/check_tres"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="1"
                     android:checked="false"
                     android:text="3"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -182,10 +187,9 @@
                     android:id="@+id/check_cuatro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="1"
-                    android:layout_column="0"
                     android:checked="false"
                     android:text="4"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -205,6 +209,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="TIPO DE TECHO"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -214,6 +219,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Cinc"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -223,6 +229,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Teja"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -232,6 +239,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Loseta"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -241,6 +249,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Loza"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -260,6 +269,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="TIPO DE PAREDES"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -269,6 +279,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Madera"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -278,6 +289,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Bloque"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -287,6 +299,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Hormigón"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -296,6 +309,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Loza"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -315,6 +329,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="TIPO DE PISO"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -324,6 +339,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Madera"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -333,6 +349,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Bloque"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -342,6 +359,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Hormigón"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -351,9 +369,9 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Loza"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
-
             </LinearLayout>
 
             <TextView
@@ -365,8 +383,8 @@
                 android:padding="10dp"
                 android:text="DATOS DEL ENCUESTADO"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textColor="@color/nos"
+                android:textSize="18dp"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="15dp" />
@@ -391,7 +409,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
                 <EditText
                     android:id="@+id/encuestado_direccion"
@@ -406,7 +424,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
                 <EditText
                     android:id="@+id/encuestado_edad"
@@ -421,7 +439,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
 
                 <TextView
@@ -431,6 +449,7 @@
                     android:layout_marginBottom="8dp"
                     android:paddingTop="10dp"
                     android:text="SEXO"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -448,6 +467,7 @@
                         android:layout_marginRight="40dp"
                         android:checked="false"
                         android:text="Hombre"
+                        android:textSize="17dp"
                         android:textColor="@color/black"
                         android:theme="@style/MyCheckBox" />
 
@@ -457,6 +477,7 @@
                         android:layout_height="wrap_content"
                         android:checked="false"
                         android:text="Mujer"
+                        android:textSize="17dp"
                         android:textColor="@color/black"
                         android:theme="@style/MyCheckBox" />
                 </LinearLayout>
@@ -473,8 +494,8 @@
                 android:padding="10dp"
                 android:text="PERFIL"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textColor="@color/nos"
+                android:textSize="18dp"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="15dp" />
@@ -493,6 +514,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="LA VIVIENDA QUE HABITA ES:"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -502,6 +524,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Propia"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -511,6 +534,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Rentada"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -520,6 +544,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Prestada"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -529,6 +554,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Otro"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -538,6 +564,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:hint="Detallar"
+                    android:textSize="17dp"
                     android:inputType="textMultiLine"
                     android:lines="3"
                     android:maxLines="3"
@@ -563,6 +590,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CUANTAS PERSONAS HABITAN LA VIVIENDA?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -575,11 +603,12 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="15dp"
                     android:hint="Número"
+                    android:textSize="17dp"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    />
 
             </LinearLayout>
 
@@ -589,12 +618,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPregunta9"
                 android:layout_marginBottom="8dp"
-
                 android:paddingLeft="25dp"
                 android:paddingTop="25dp"
                 android:paddingRight="25dp"
-
                 android:text="¿ALGÚN INTEGRANTE DE LA FAMILIA HA TENIDO PROBLEMAS ESTOMACALES O INTESTINALES EN ESTE AÑO?"
+                android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/black" />
 
@@ -614,6 +642,7 @@
                     android:layout_marginRight="40dp"
                     android:checked="false"
                     android:text="Si"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -623,6 +652,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="No"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
             </LinearLayout>
@@ -642,9 +672,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/check_no"
                     android:layout_marginBottom="8dp"
-
                     android:paddingTop="10dp"
                     android:text="¿TUVO TRATAMIENTO MÉDICO? "
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -662,6 +692,7 @@
                         android:layout_marginRight="40dp"
                         android:checked="false"
                         android:text="Si"
+                        android:textSize="17dp"
                         android:textColor="@color/black"
                         android:theme="@style/MyCheckBox" />
 
@@ -671,6 +702,7 @@
                         android:layout_height="wrap_content"
                         android:checked="false"
                         android:text="No"
+                        android:textSize="17dp"
                         android:textColor="@color/black"
                         android:theme="@style/MyCheckBox" />
                 </LinearLayout>
@@ -691,6 +723,7 @@
                         android:layout_marginBottom="8dp"
                         android:paddingTop="10dp"
                         android:text="¿CUÁL FUE EL DIAGNÓSTICO?"
+                        android:textSize="18dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/black" />
 
@@ -703,11 +736,11 @@
                         android:layout_marginTop="4dp"
                         android:layout_marginEnd="15dp"
                         android:hint="Detallar"
+                        android:textSize="17dp"
                         android:inputType="textPersonName|textCapWords"
                         android:padding="5dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/gris"
-                        android:textSize="18dp" />
+                        android:textColorHint="@color/gris"/>
 
 
                 </LinearLayout>
@@ -724,6 +757,7 @@
                 android:paddingTop="25dp"
                 android:paddingRight="25dp"
                 android:text="¿ALGÚN INTEGRANTE DE LA FAMILIA TENIDO ENFERMEDADES DE LA PIEL?"
+                android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/black" />
 
@@ -743,6 +777,7 @@
                     android:layout_marginRight="40dp"
                     android:checked="false"
                     android:text="Si"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -752,6 +787,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="No"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
             </LinearLayout>
@@ -770,9 +806,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-
                     android:paddingTop="10dp"
-                    android:text="¿TUVO TRATAMIENTO MÉDICO? "
+                    android:text="¿TUVO TRATAMIENTO MÉDICO?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -790,6 +826,7 @@
                         android:layout_marginRight="40dp"
                         android:checked="false"
                         android:text="Si"
+                        android:textSize="17dp"
                         android:textColor="@color/black"
                         android:theme="@style/MyCheckBox" />
 
@@ -799,6 +836,7 @@
                         android:layout_height="wrap_content"
                         android:checked="false"
                         android:text="No"
+                        android:textSize="17dp"
                         android:textColor="@color/black"
                         android:theme="@style/MyCheckBox" />
                 </LinearLayout>
@@ -819,6 +857,7 @@
                         android:layout_marginBottom="8dp"
                         android:paddingTop="10dp"
                         android:text="¿CUÁL FUE EL DIAGNÓSTICO?"
+                        android:textSize="18dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/black" />
 
@@ -835,7 +874,7 @@
                         android:padding="5dp"
                         android:textColor="@color/black"
                         android:textColorHint="@color/gris"
-                        android:textSize="18dp" />
+                        android:textSize="17dp" />
 
 
                 </LinearLayout>
@@ -856,6 +895,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿DE DONDE SE ABASTECE PARA EL AGUA DE CONSUMO?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -865,6 +905,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Red agua potable"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -873,7 +914,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Pozo "
+                    android:text="Pozo"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -883,6 +925,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Agua de río"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -892,6 +935,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Agua lluvia"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -900,7 +944,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Agua de tanquero "
+                    android:text="Agua de tanquero"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -910,6 +955,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Agua embotellada"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -919,6 +965,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Otro"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -939,11 +986,11 @@
                         android:layout_marginTop="4dp"
                         android:layout_marginEnd="15dp"
                         android:hint="Nombre del río"
+                        android:textSize="17dp"
                         android:inputType="textPersonName|textCapWords"
                         android:padding="5dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/gris"
-                        android:textSize="18dp" />
+                        android:textColorHint="@color/gris"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -963,11 +1010,11 @@
                         android:layout_marginTop="4dp"
                         android:layout_marginEnd="15dp"
                         android:hint="Detallar"
+                        android:textSize="17dp"
                         android:inputType="textPersonName|textCapWords"
                         android:padding="5dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/gris"
-                        android:textSize="18dp" />
+                        android:textColorHint="@color/gris"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -986,6 +1033,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿TIENE CISTERNA O TANQUE ELEVADO?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -995,6 +1043,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Cisterna"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1004,6 +1053,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Tanque elevado"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1013,6 +1063,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Ninguno"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1034,6 +1085,7 @@
                     android:layout_marginBottom="8dp"
                     android:paddingTop="10dp"
                     android:text="CAPACIDAD DE LA CISTERNA (metros^3)"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1050,7 +1102,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
 
             </LinearLayout>
@@ -1071,6 +1123,7 @@
                     android:layout_marginBottom="8dp"
                     android:paddingTop="10dp"
                     android:text="CAPACIDAD DEL TANQUE ELEVADO (Litros)"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1087,7 +1140,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
 
             </LinearLayout>
@@ -1107,6 +1160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CON QUÉ FRECUENCIA REALIZA LA LIMPIEZA O LAVADO?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1116,6 +1170,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Semanal"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1125,6 +1180,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Quincenal "
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1134,6 +1190,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Mensual "
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1143,6 +1200,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Trimestral "
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1151,7 +1209,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Semestral "
+                    android:text="Semestral"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1160,7 +1219,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Anual "
+                    android:text="Anual"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1169,7 +1229,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Bienal "
+                    android:text="Bienal"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1178,7 +1239,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Nunca "
+                    android:text="Nunca"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1194,6 +1256,7 @@
                 android:paddingTop="25dp"
                 android:paddingRight="25dp"
                 android:text="INDICAR SI REALIZA CLORACIÓN AL AGUA DE ESTOS ALMACENAMIENTOS"
+                android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/black"
                 android:visibility="gone" />
@@ -1215,6 +1278,7 @@
                     android:layout_marginRight="40dp"
                     android:checked="false"
                     android:text="Si"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1224,6 +1288,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="No"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
             </LinearLayout>
@@ -1243,6 +1308,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CON QUÉ FRECUENCIA CLORA EL TANQUE?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1255,11 +1321,11 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="15dp"
                     android:hint="Detallar"
+                    android:textSize="17dp"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textColorHint="@color/gris" />
 
             </LinearLayout>
 
@@ -1278,6 +1344,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CUAL ES LA DOSIFICACIÓN UTILIZADA?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1290,11 +1357,11 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="15dp"
                     android:hint="Detallar"
+                    android:textSize="17dp"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textColorHint="@color/gris"/>
 
             </LinearLayout>
 
@@ -1312,6 +1379,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="EL AGUA QUE USTED UTILIZA PARA BEBER ES:"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1319,7 +1387,7 @@
                     android:id="@+id/check_llave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textSize="17dp"
                     android:checked="false"
                     android:text="Llave"
                     android:textColor="@color/black"
@@ -1329,7 +1397,7 @@
                     android:id="@+id/check_hervida"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textSize="17dp"
                     android:checked="false"
                     android:text="Hervida"
                     android:textColor="@color/black"
@@ -1339,7 +1407,7 @@
                     android:id="@+id/check_filtrada"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textSize="17dp"
                     android:checked="false"
                     android:text="Filtrada"
                     android:textColor="@color/black"
@@ -1349,7 +1417,7 @@
                     android:id="@+id/check_embotellada1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textSize="17dp"
                     android:checked="false"
                     android:text="Agua Embotellada"
                     android:textColor="@color/black"
@@ -1367,6 +1435,7 @@
                 android:paddingTop="25dp"
                 android:paddingRight="25dp"
                 android:text="REALIZA ALGÚN TIPO DE TRATAMIENTO AL AGUA QUE UTLIZA PARA BEBER:"
+                android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/black" />
 
@@ -1387,6 +1456,7 @@
                     android:layout_marginRight="40dp"
                     android:checked="false"
                     android:text="Si"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1394,10 +1464,9 @@
                     android:id="@+id/check_no5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_row="1"
-                    android:layout_column="0"
                     android:checked="false"
                     android:text="No"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1418,6 +1487,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR QUE TRATAMIENTO"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1434,7 +1504,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
             </LinearLayout>
 
@@ -1452,6 +1522,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿QUÉ USO LE DA AL AGUA?"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1459,7 +1530,7 @@
                     android:id="@+id/check_cocina"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:textSize="17dp"
                     android:checked="false"
                     android:text="Cocina"
                     android:textColor="@color/black"
@@ -1471,6 +1542,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Aseo Personal"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1480,6 +1552,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Lavado de ropa"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1489,6 +1562,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Animales"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1498,6 +1572,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Riego"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1518,6 +1593,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="EN EL CASO DE TENER ANIMALES QUE CONSUMEN AGUA INDICAR:"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1527,6 +1603,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Mascotas"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1536,6 +1613,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Para Consumo"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1545,6 +1623,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Para Venta"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
             </LinearLayout>
@@ -1563,6 +1642,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR ANIMALES PARA CONSUMO"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1579,7 +1659,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
             </LinearLayout>
 
@@ -1598,6 +1678,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR ANIMALES PARA VENTA"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1614,7 +1695,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
             </LinearLayout>
 
@@ -1634,6 +1715,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="EN EL CASO DE TENER SEMBRÍOS QUE CONSUMEN AGUA INDICAR:"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1643,6 +1725,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Ornamentales"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1652,6 +1735,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Para Consumo"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
 
@@ -1661,6 +1745,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Para Venta"
+                    android:textSize="17dp"
                     android:textColor="@color/black"
                     android:theme="@style/MyCheckBox" />
             </LinearLayout>
@@ -1680,6 +1765,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR SEMBRÍOS PARA CONSUMO"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1696,7 +1782,7 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
             </LinearLayout>
 
@@ -1715,6 +1801,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR SEMBRÍOS PARA VENTA"
+                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1731,14 +1818,28 @@
                     android:padding="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
-                    android:textSize="18dp" />
+                    android:textSize="17dp" />
 
             </LinearLayout>
+
 
 
         </LinearLayout>
 
 
     </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_margin="30dp"
+        app:fabCustomSize="82dp"
+        app:maxImageSize="50dp"
+
+        android:src="@drawable/ic_guardar" />
 
 </RelativeLayout>

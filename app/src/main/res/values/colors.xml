@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gris">#8E8E8E</color>
+    <color name="nos">#040875</color>
 
     <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
         <item name="colorControlNormal">#000</item>   <!-- normal border color change as you wish -->
