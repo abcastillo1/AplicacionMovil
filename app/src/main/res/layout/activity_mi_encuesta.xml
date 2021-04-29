@@ -40,6 +40,7 @@
                 android:layout_marginTop="15dp"
                 android:src="@drawable/ic_camara"
                 app:c_border="true"
+                app:maxImageSize="50dp"
                 app:c_border_color="@color/black"
                 app:c_border_width="1dp" />
 
@@ -74,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:textSize="18dp"
-                    android:text="ELIJA UNA OPCION"
+                    android:text="ELIJA UNA OPCIÓN"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/black" />
 
@@ -1839,7 +1840,6 @@
         android:layout_margin="30dp"
         app:fabCustomSize="82dp"
         app:maxImageSize="50dp"
-
         android:src="@drawable/ic_guardar" />
 
 </RelativeLayout>
