@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name" >Proyecto</string>
+    <string name="app_name">Proyecto</string>
+    <string name="titulo_inicio_de_sesion">Inicio de sesión</string>
 </resources>
