@@ -13,7 +13,6 @@
         <activity android:name=".RegistroUsuario" />
         <activity android:name=".MainContent" />
         <activity android:name=".MiEncuesta" />
-        <activity android:name=".PrincipalActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
