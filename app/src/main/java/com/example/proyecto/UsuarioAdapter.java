@@ -1,5 +1,6 @@
 package com.example.proyecto;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 public class UsuarioAdapter {
 
     //nombre de la base de datos
-    private final String DB_NAME = "PROYECTO";
+    private final String DB_NAME = "PROYECTO_APP";
     //version de la base de datos
     private final int DB_VERSION = 1;
     //nombre de la tabla
@@ -45,18 +46,26 @@ public class UsuarioAdapter {
 
     public UsuarioModel login(String usuario,String codigo){
 
-        String where="codigo = ? AND nombre = ?";
-        Cursor cursor = database.query(TABLE_NAME,null,where,new String[]{usuario, codigo},null, null, null);
+        String where= "nombre = ? AND codigo = ?";
+        Cursor cursor = database.query(TABLE_NAME,null, where, new String[]{usuario, codigo},null, null, null);
         if(cursor.getCount() < 1){
             return null;
         }else{
-            model=new UsuarioModel();
             cursor.moveToFirst();
+            model=new UsuarioModel();
             model.set_contrasena(cursor.getString(cursor.getColumnIndex("codigo")));
             model.set_nombre(cursor.getString(cursor.getColumnIndex("nombre")));
             return model;
 
         }
+    }
+
+    public long insert(UsuarioModel model){
+        ContentValues values = new ContentValues();
+        values.put("nombre", model.get_nombre());
+        values.put("codigo", model.get_contrasena());
+
+        return database.insert(TABLE_NAME,null,values);
     }
 }
 
