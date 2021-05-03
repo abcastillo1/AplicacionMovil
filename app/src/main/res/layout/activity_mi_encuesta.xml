@@ -71,13 +71,15 @@
 
                 <TextView
                     android:id="@+id/texto_info"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:textSize="18dp"
+                    android:background="#E64187FF"
                     android:text="ELIJA UNA OPCIÓN"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_casa"
@@ -146,13 +148,15 @@
 
                 <TextView
                     android:id="@+id/texto_info1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
+                    android:background="#E64187FF"
                     android:text="NÚMERO DE PISOS"
-                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_uno"
@@ -206,13 +210,16 @@
 
                 <TextView
                     android:id="@+id/texto_info2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
+
                     android:text="TIPO DE TECHO"
-                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_cinc"
@@ -266,13 +273,16 @@
 
                 <TextView
                     android:id="@+id/texto_info3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="TIPO DE PAREDES"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_madera"
@@ -326,13 +336,15 @@
 
                 <TextView
                     android:id="@+id/texto_info4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="TIPO DE PISO"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_madera1"
@@ -395,6 +407,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPregunta1"
+                android:background="#5CEAEAEA"
                 android:orientation="vertical"
                 android:padding="25dp">
 
@@ -403,11 +416,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="15dp"
+
                     android:hint="Nombres"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
@@ -418,8 +433,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/encuestado_nombre"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="15dp"
+                    android:background="#DCDADA"
                     android:hint="Dirección"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
@@ -433,8 +449,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/encuestado_direccion"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
+                    android:background="#DCDADA"
+                    android:layout_marginBottom="15dp"
                     android:hint="Edad"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
@@ -445,14 +463,17 @@
 
                 <TextView
                     android:id="@+id/texto_info5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:paddingTop="10dp"
+
                     android:text="SEXO"
-                    android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+
+                    android:textSize="18dp"
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
 
                 <LinearLayout
                     android:id="@+id/textPregunta7"
@@ -468,8 +489,8 @@
                         android:layout_marginRight="40dp"
                         android:checked="false"
                         android:text="Hombre"
-                        android:textSize="17dp"
                         android:textColor="@color/black"
+                        android:textSize="17dp"
                         android:theme="@style/MyCheckBox" />
 
                     <CheckBox
@@ -478,8 +499,8 @@
                         android:layout_height="wrap_content"
                         android:checked="false"
                         android:text="Mujer"
-                        android:textSize="17dp"
                         android:textColor="@color/black"
+                        android:textSize="17dp"
                         android:theme="@style/MyCheckBox" />
                 </LinearLayout>
 
@@ -511,13 +532,15 @@
 
                 <TextView
                     android:id="@+id/texto_info6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="LA VIVIENDA QUE HABITA ES:"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_propia"
@@ -570,6 +593,7 @@
                     android:lines="3"
                     android:maxLines="3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:visibility="gone" />
@@ -587,13 +611,15 @@
 
                 <TextView
                     android:id="@+id/texto_info7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CUANTAS PERSONAS HABITAN LA VIVIENDA?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/encuestado_vivienda"
@@ -607,6 +633,7 @@
                     android:textSize="17dp"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     />
@@ -615,17 +642,19 @@
 
             <TextView
                 android:id="@+id/texto_info8"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPregunta9"
                 android:layout_marginBottom="8dp"
-                android:paddingLeft="25dp"
-                android:paddingTop="25dp"
-                android:paddingRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
                 android:text="¿ALGÚN INTEGRANTE DE LA FAMILIA HA TENIDO PROBLEMAS ESTOMACALES O INTESTINALES EN ESTE AÑO?"
                 android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/black" />
+                android:background="#E64187FF"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/textPregunta10"
@@ -669,7 +698,7 @@
 
                 <TextView
                     android:id="@+id/texto_info9"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/check_no"
                     android:layout_marginBottom="8dp"
@@ -677,7 +706,9 @@
                     android:text="¿TUVO TRATAMIENTO MÉDICO? "
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:id="@+id/textPregunta12"
@@ -719,14 +750,16 @@
 
                     <TextView
                         android:id="@+id/texto_info10"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:paddingTop="10dp"
                         android:text="¿CUÁL FUE EL DIAGNÓSTICO?"
                         android:textSize="18dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/black" />
+                        android:background="#E64187FF"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/texto_diagnostico"
@@ -750,17 +783,19 @@
 
             <TextView
                 android:id="@+id/texto_info11"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPregunta11"
                 android:layout_marginBottom="8dp"
-                android:paddingLeft="25dp"
-                android:paddingTop="25dp"
-                android:paddingRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
                 android:text="¿ALGÚN INTEGRANTE DE LA FAMILIA TENIDO ENFERMEDADES DE LA PIEL?"
                 android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/black" />
+                android:background="#E64187FF"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/textPregunta14"
@@ -804,14 +839,16 @@
 
                 <TextView
                     android:id="@+id/texto_info12"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:paddingTop="10dp"
                     android:text="¿TUVO TRATAMIENTO MÉDICO?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:id="@+id/textPregunta16"
@@ -853,14 +890,16 @@
 
                     <TextView
                         android:id="@+id/texto_info13"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:paddingTop="10dp"
                         android:text="¿CUÁL FUE EL DIAGNÓSTICO?"
                         android:textSize="18dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/black" />
+                        android:background="#E64187FF"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/texto_diagnostico1"
@@ -873,6 +912,7 @@
                         android:hint="Detallar"
                         android:inputType="textPersonName|textCapWords"
                         android:padding="5dp"
+                        android:background="#DCDADA"
                         android:textColor="@color/black"
                         android:textColorHint="@color/gris"
                         android:textSize="17dp" />
@@ -892,13 +932,15 @@
 
                 <TextView
                     android:id="@+id/texto_info14"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿DE DONDE SE ABASTECE PARA EL AGUA DE CONSUMO?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
 
                 <CheckBox
                     android:id="@+id/check_potable"
@@ -990,6 +1032,7 @@
                         android:textSize="17dp"
                         android:inputType="textPersonName|textCapWords"
                         android:padding="5dp"
+                        android:background="#DCDADA"
                         android:textColor="@color/black"
                         android:textColorHint="@color/gris"/>
                 </LinearLayout>
@@ -1014,6 +1057,7 @@
                         android:textSize="17dp"
                         android:inputType="textPersonName|textCapWords"
                         android:padding="5dp"
+                        android:background="#DCDADA"
                         android:textColor="@color/black"
                         android:textColorHint="@color/gris"/>
                 </LinearLayout>
@@ -1030,13 +1074,15 @@
 
                 <TextView
                     android:id="@+id/texto_info15"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿TIENE CISTERNA O TANQUE ELEVADO?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_cisterna"
@@ -1081,14 +1127,16 @@
 
                 <TextView
                     android:id="@+id/texto_info16"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:paddingTop="10dp"
                     android:text="CAPACIDAD DE LA CISTERNA (metros^3)"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/capacidad_cisterna"
@@ -1101,6 +1149,7 @@
                     android:hint="Número"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
@@ -1119,14 +1168,16 @@
 
                 <TextView
                     android:id="@+id/texto_info17"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:paddingTop="10dp"
                     android:text="CAPACIDAD DEL TANQUE ELEVADO (Litros)"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/capacidad_tanque"
@@ -1139,6 +1190,7 @@
                     android:hint="Número"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
@@ -1157,13 +1209,15 @@
 
                 <TextView
                     android:id="@+id/texto_info18"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CON QUÉ FRECUENCIA REALIZA LA LIMPIEZA O LAVADO?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_semanal"
@@ -1249,7 +1303,7 @@
 
             <TextView
                 android:id="@+id/texto_info19"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPregunta24"
                 android:layout_marginBottom="8dp"
@@ -1259,8 +1313,11 @@
                 android:text="INDICAR SI REALIZA CLORACIÓN AL AGUA DE ESTOS ALMACENAMIENTOS"
                 android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/black"
-                android:visibility="gone" />
+
+                android:visibility="gone"
+                android:background="#E64187FF"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:id="@+id/textPregunta25"
@@ -1274,14 +1331,17 @@
 
                 <CheckBox
                     android:id="@+id/check_si4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="40dp"
                     android:checked="false"
                     android:text="Si"
                     android:textSize="17dp"
-                    android:textColor="@color/black"
-                    android:theme="@style/MyCheckBox" />
+
+                    android:theme="@style/MyCheckBox"
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
 
                 <CheckBox
                     android:id="@+id/check_no4"
@@ -1305,13 +1365,15 @@
 
                 <TextView
                     android:id="@+id/texto_info20"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CON QUÉ FRECUENCIA CLORA EL TANQUE?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/frecuencia"
@@ -1325,6 +1387,7 @@
                     android:textSize="17dp"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris" />
 
@@ -1341,13 +1404,15 @@
 
                 <TextView
                     android:id="@+id/texto_info21"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿CUAL ES LA DOSIFICACIÓN UTILIZADA?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/dosificacion"
@@ -1361,6 +1426,7 @@
                     android:textSize="17dp"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"/>
 
@@ -1376,13 +1442,15 @@
 
                 <TextView
                     android:id="@+id/texto_info22"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="EL AGUA QUE USTED UTILIZA PARA BEBER ES:"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_llave"
@@ -1428,7 +1496,7 @@
 
             <TextView
                 android:id="@+id/texto_info23"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPregunta28"
                 android:layout_marginBottom="8dp"
@@ -1438,7 +1506,9 @@
                 android:text="REALIZA ALGÚN TIPO DE TRATAMIENTO AL AGUA QUE UTLIZA PARA BEBER:"
                 android:textSize="18dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/black" />
+                android:background="#E64187FF"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:id="@+id/textPregunta29"
@@ -1484,13 +1554,15 @@
 
                 <TextView
                     android:id="@+id/texto_info24"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR QUE TRATAMIENTO"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/tratamiento"
@@ -1503,6 +1575,7 @@
                     android:hint="Detallar"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
@@ -1519,13 +1592,15 @@
 
                 <TextView
                     android:id="@+id/texto_info25"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="¿QUÉ USO LE DA AL AGUA?"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_cocina"
@@ -1590,13 +1665,15 @@
 
                 <TextView
                     android:id="@+id/texto_info26"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="EN EL CASO DE TENER ANIMALES QUE CONSUMEN AGUA INDICAR:"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_animal_mascota"
@@ -1639,13 +1716,15 @@
 
                 <TextView
                     android:id="@+id/texto_info27"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR ANIMALES PARA CONSUMO"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/text_animal_consumo"
@@ -1658,6 +1737,7 @@
                     android:hint="Detallar"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
@@ -1675,13 +1755,15 @@
 
                 <TextView
                     android:id="@+id/texto_info28"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR ANIMALES PARA VENTA"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/text_animal_venta"
@@ -1712,13 +1794,15 @@
 
                 <TextView
                     android:id="@+id/texto_info29"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="EN EL CASO DE TENER SEMBRÍOS QUE CONSUMEN AGUA INDICAR:"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <CheckBox
                     android:id="@+id/check_ornamentales"
@@ -1762,13 +1846,15 @@
 
                 <TextView
                     android:id="@+id/texto_info30"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR SEMBRÍOS PARA CONSUMO"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/text_sembrios_consumo"
@@ -1781,6 +1867,7 @@
                     android:hint="Detallar"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
@@ -1798,13 +1885,15 @@
 
                 <TextView
                     android:id="@+id/texto_info31"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="INDICAR SEMBRÍOS PARA VENTA"
                     android:textSize="18dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/black" />
+                    android:background="#E64187FF"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/text_sembrios_venta"
@@ -1817,6 +1906,7 @@
                     android:hint="Detallar"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="5dp"
+                    android:background="#DCDADA"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gris"
                     android:textSize="17dp" />
